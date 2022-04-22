@@ -1,5 +1,9 @@
-# Python Vigenère Encryption Tool
-Le **chiffre de Vigenère** est un système de [chiffrement par substitution](https://fr.wikipedia.org/wiki/Chiffrement_par_substitution "Chiffrement par substitution") polyalphabétique dans lequel une même lettre du message clair peut, suivant sa position dans celui-ci, être remplacée par des lettres différentes, contrairement à un système de chiffrement mono alphabétique comme le [chiffre de César](https://fr.wikipedia.org/wiki/Chiffre_de_C%C3%A9sar "Chiffre de César") (qu'il utilise cependant comme composant).
+#Python 
+##Vigenère Encryption Tool
+Le **chiffrement de Vigenère**, type de [chiffrement par substitution](https://fr.wikipedia.org/wiki/Chiffrement_par_substitution "Chiffrement par substitution") utilisé pour le chiffrement de données dans lequel la structure originale du texte en clair est quelque peu dissimulée dans le texte chiffré en utilisant plusieurs différents chiffrages par substitution monoalphabétiques plutôt qu'un seul. 
+
+La clé de code spécifie quelle substitution particulière doit être employée pour chiffrer chaque symbole du texte en clair. Ces chiffrages résultants, connus sous le nom générique de _**polyalphabétiques**_, ont une longue histoire d'utilisation. Les systèmes diffèrent principalement par la manière dont la clé est utilisée pour choisir parmi la collection de règles de substitution monoalphabétique.
+
 <p align="center">
   <img src="https://iili.io/VAnXQn.md.png" />
 </p>
@@ -40,19 +44,19 @@ chmod +x vigenere.py
 **Attention !** Veuillez **remplacer** ``./vigenere.py`` par ``python vigenere.py`` lors d'une utilisation sous l'**OS Windows**.
 
 Voici la commande permettant d'effectuer un chiffrement Vigenère :
-```
+```bash
 ./vigenere.py -k "key"
 ```
 
 Chiffrer un text :
 ```bash
-./vignere.py -k "key" -e "TextToEncrypt"
+./vigenere.py -k "key" -e "TextToEncrypt"
 ```
 
 Chiffrer le contenu d'un fichier, puis préciser un chemin de sortie :
 
 ```bash
-./vignère -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
+./vigenere.py -k "key" -EF "InputFile.txt" -OF "OutputFile.txt"
 ```
 
 ## À propos
@@ -63,6 +67,6 @@ Message destiné aux élèves de l'EPSIC  : si vous utilisez ce code dans le cad
 
 **Auteur :** danglock
 
-**Contributeur :** AlexioShow
+**Contributeur :** AlexioShow, Ploudo
 
-**Date :** 08.04.2022
+**Date :** 13.04.2022
